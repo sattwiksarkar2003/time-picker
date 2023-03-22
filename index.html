@@ -11,12 +11,12 @@
     <body>
         <form action="">
             <label for="time">Choose time</label>
-            <input type="text" name="time seperatorTime" value="12:00">
+            <input class="time duration" type="text" name="time" value="12:00">
             <input type="submit">
         </form>
         <script>
             $(document).ready(function(){
-                $('.seperatorTime').clockTimePicker({separator:':'});
+                $('.duration').clockTimePicker({duration:true,maximum:'80:00'});
             })
             
         </script>
